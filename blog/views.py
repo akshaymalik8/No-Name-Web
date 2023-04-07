@@ -8,6 +8,6 @@ class BlogList(generic.ListView):
 
 class BlogDetail(generic.DetailView):
     model = blog
-    template_name = 'blog_detail.html'
+    template_name = 'blog_details.html'
     
 # Create your views here.
