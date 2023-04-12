@@ -19,5 +19,7 @@ from project3 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage),
+    path('register/', views.register),
+    path('aboutus/', views.AboutUs),
 
 ]

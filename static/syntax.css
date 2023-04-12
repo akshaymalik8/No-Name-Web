@@ -17,9 +17,13 @@ body {
     justify-content: left;
     font-size: 30px;
     padding: 20px;
-    
-
 }
+
+.brand {
+    padding: 20px;
+    margin: 10px;
+}
+
 #nav { 
     text-align: right;
     list-style-type: none;
