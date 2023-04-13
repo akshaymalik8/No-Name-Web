@@ -1,13 +1,14 @@
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9e9e9;
 }
-
 
 
 .container {
     background-color: rgb(65, 101, 201);
     margin: 0 auto;
+    width: 100%;
 }
 
 .brand a {
@@ -21,7 +22,6 @@ body {
 
 .brand {
     padding-top: 30px;
-
 }
 
 #nav { 
@@ -52,4 +52,10 @@ body {
 
 #nav a:hover {
     color: black;
+}
+
+.post {
+    display: block;
+    background-color: white;
+    
 }
