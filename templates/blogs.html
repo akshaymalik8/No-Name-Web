@@ -1,7 +1,14 @@
 {% extends "base.html"%}
 
 {% block content %}
-
-
+{% for n in blogData%}
+  <div>
+    <div class="post">
+        <h2 class="post-title">{{n.title}}</h2>
+        <p class="post-auther">{{n.auther}} | {{n.created_on}}</p>
+        <p class="post-content">{{n.content}}</p>
+    </div>
+  </div>
+{% endfor %}
 
 {% endblock %}
