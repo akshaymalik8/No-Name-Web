@@ -58,3 +58,13 @@ body {
     display: block;
     background-color: white;
 }
+
+h2.registration {
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+div.form {
+    justify-content: center;
+}
