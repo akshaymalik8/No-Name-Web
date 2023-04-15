@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from blog.models import blog
+from django.http import HttpResponse
 
 def homepage(request):
     return render(request, "index.html")
