@@ -96,3 +96,12 @@ p.about-des {
     padding: 5px;
     
 }
+
+div.form {
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+}
+
