@@ -68,3 +68,31 @@ h2.registration {
 div.form {
     justify-content: center;
 }
+
+p.reg-des {
+    margin: 10px;
+    padding: 5px;   
+}
+
+h2.blog {
+    margin: 10px;
+    padding: 5px;
+}
+    
+
+p.blog-des {
+        margin: 10px;
+        padding: 5px;
+}
+
+h2.aboutus {
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+p.about-des {
+    margin: 10px;
+    padding: 5px;
+    
+}
