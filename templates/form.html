@@ -3,26 +3,27 @@
 {% block content %}
 
 <div class="form">
-    <form>
+    <form action="{% url 'saveform' %}" method="POST">
+      {% csrf_token %}
         <div>
           <label>Full Name</label>
           <br>
-          <input type="text" placeholder=" Enter Your Full Name">
+          <input type="text" placeholder=" Enter Your Full Name" name="name">
         </div>
         <div>
             <label>Email</label>
           <br>
-          <input type="text" placeholder="Enter Your Email">
+          <input type="text" placeholder="Enter Your Email" name="email">
         </div>
         <div>
             <label>Password</label>
           <br>
-          <input type="password" placeholder="Enter Password">
+          <input type="password" placeholder="Enter Password" name="password">
         </div>
         <div>
-            <label>Password</label>
+            <label>Re-Password</label>
           <br>
-          <input type="password" placeholder="Re-enter Password">
+          <input type="password" placeholder="Re-enter Password" name="re-password">
         </div>
         <br>
         <button type="submit" >Submit</button>

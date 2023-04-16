@@ -98,7 +98,7 @@ p.about-des {
 }
 
 div.form {
-    justify-content: center;
+    text-align: center;
 }
 
 .social {
@@ -128,4 +128,16 @@ a.link {
 
 div.footer {
     display: flex;
+}
+
+button {
+    background-color: #383faa;
+    border-radius: 3px;
+    height: 40px;
+    width: 80px;
+    color: #e9e9e9;
+}
+
+button:hover {
+    background-color: #1f2681;
 }
