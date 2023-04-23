@@ -2,6 +2,7 @@ from django.shortcuts import render
 from blog.models import blog
 from django.http import HttpResponse
 from userdata.models import userData
+from django.contrib import messages
 
 def homepage(request):
     return render(request, "index.html")
@@ -27,7 +28,9 @@ def saveform(request):
         email=request.POST.get('email')
         password=request.POST.get('password')
         data=userData(name=name,email=email,password=password,)
-        data.save()    
+        data.save()
+        messages.success(request, "Data added")
+        
     return render(request, "form.html")
 
 def Blog(request):

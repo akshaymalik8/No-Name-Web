@@ -4,9 +4,9 @@
 {% for n in blogData%}
   <div>
     <div class="post">
-        <h2 class="post-title">{{n.title}}</h2>
+        <a href="{% url 'blog_detail' n.slug %}" ><h2 class="post-title">{{n.title}}</h2></a>
         <p class="post-auther">{{n.auther}} | {{n.created_on}}</p>
-        <p class="post-content">{{n.content}}</p>
+        <p class="post-content">{{n.content | linebreaks}}</p>
     </div>
   </div>
 {% endfor %}

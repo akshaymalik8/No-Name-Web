@@ -21,7 +21,7 @@ urlpatterns = [
     path('', views.homepage),
     path('register/', views.register),
     path('aboutus/', views.AboutUs),
-    path('blogs/', views.Blog),
+    path('blogs/', include("blog.urls")),
     path('saveform/', views.saveform, name="saveform"),
 
 ]
